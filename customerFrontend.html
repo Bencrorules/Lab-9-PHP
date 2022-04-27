@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<hthml>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <form action="customerBackend.php" method="post" id="storefront">
+        <label for="username">Username:</label><br>
+        <input type="email" id="username" name="username" value=""><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password" value="" required><br>
+
+        <p>What would you like to purchase?</p>
+        <label for="apples">Number of Apples ($3.99 Each):</label><br>
+        <input type="number" min="0" id="apples" name="apples" value="0"><br>
+        <label for="bananas">Number of Bananas ($2.99 Each):</label><br>
+        <input type="number" min="0" id="bananas" name="bananas" value="0"><br>
+        <label for="grapes">Number of Grapes ($1.99 Each):</label><br>
+        <input type="number" min="0" id="grapes" name="grapes" value="0"><br>
+
+        <p>Prefered shipping option?</p>
+        <input type="radio" id="shipping1" name="shipping" value="Free 7 Day" checked>
+        <label for="free">Free 7 Day</label><br>
+        <input type="radio" id="shipping2" name="shipping" value="$5.00 Three Day">
+        <label for="threeDay">$5.00 Three Day</label><br>
+        <input type="radio" id="shipping3" name="shipping" value="$50.00 Over-Night">
+        <label for="overNight">$50.00 Over-Night</label><br>
+
+        <br><input type="reset" value="Reset Form">
+        <br><br><input type="submit" value="Submit Form">
+    </form>
+</hthml>
